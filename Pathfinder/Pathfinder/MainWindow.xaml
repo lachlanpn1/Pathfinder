@@ -1,0 +1,19 @@
+﻿<Window x:Class="Pathfinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pathfinder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="canvas" HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="657" MouseDown="Canvas_MouseDown"/>
+        <Button Content="Generate new Map" HorizontalAlignment="Left" Margin="675,10,0,0" VerticalAlignment="Top" Width="109" Click="btnGeneratenewMap_Click"/>
+        <Button Background="Red" Name="btnStart" Content="Mark Start" HorizontalAlignment="Left" Margin="675,34,0,0" VerticalAlignment="Top" Width="109" Click="btnMarkStart_Click"/>
+        <Button Background="Red" Name="btnEnd" Content="Mark End" HorizontalAlignment="Left" Margin="675,57,0,0" VerticalAlignment="Top" Width="109" Click="btnMarkEnd_Click"/>
+        <Button Content="Search DFS" HorizontalAlignment="Left" Margin="675,81,0,0" VerticalAlignment="Top" Width="109" Height="21" Click="btnDFSSearch_Click"/>
+        <Button Content="Search GBFS" HorizontalAlignment="Left" Margin="675,107,0,0" VerticalAlignment="Top" Width="109" Height="21" Click="btnGBFSSearch_Click"/>
+        <Button Content="Search A*" HorizontalAlignment="Left" Margin="675,133,0,0" VerticalAlignment="Top" Width="109" Height="21" Click="btnASTAR_Click"/>
+
+    </Grid>
+</Window>
